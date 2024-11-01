@@ -1,0 +1,81 @@
+ /* The Modal (background) */
+ .psqr-upload-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .psqr-upload-modal.modal-visible {
+      display: block;
+  }
+
+  /* Modal Content/Box */
+  .psqr-upload-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+
+  .psqr-upload-form .form-table th {
+   /* width: 100%; */
+  }
+
+  .psqr-upload-error, .psqr-upload-warning {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 73, 73);
+  }
+
+  .psqr-upload-warning {
+    background-color: #a9e196; /*#ffc107;*/
+  }
+
+  .psqr-upload-disclaimer {
+    background-color: #ffc1074a;
+	  padding: 10px;
+  }
+
+  .psqr-upload-error > * {
+      margin: 1em;
+      color: #fff !important;
+  }
+
+  .psqr-upload-warning > * {
+    margin: 1em;
+  }
+
+  .psqr-upload-error.visible, .psqr-upload-warning.visible {
+    display: inline-block;
+  }
+
+  /* The Close Button */
+  .psqr-upload-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .psqr-upload-close:hover,
+  .psqr-upload-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .psqr-hidden {
+    display: none;
+  }
+
+  .psqr-visible {
+    display: initial;
+  }
